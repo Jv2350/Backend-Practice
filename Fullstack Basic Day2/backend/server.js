@@ -9,8 +9,8 @@ app.get("/", (req, res) => {
   res.send("Server is ready");
 });
 
-app.get("/data", (req, res) => {
-  res.send(data);
+app.get("/api/data", (req, res) => {
+  res.json(data);
 });
 
 app.listen(port, () => {
